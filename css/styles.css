@@ -1,0 +1,214 @@
+/*---------------------------
+Box-sizing
+---------------------------*/
+
+
+html{
+    box-sizing: border-box;
+}
+
+*,*:before,:after{
+    box-sizing: inherit;
+}
+
+/*---------------------------
+Base
+---------------------------*/
+
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: Roboto,sans-serif;
+
+    background-color: white;
+
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    max-width: 1080px;
+    margin:0 auto ;
+}
+
+/*---------------------------
+Mise en page
+---------------------------*/
+
+header{
+    background-color: #f26c25;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    margin-right: 10px;
+}
+
+header h1{
+    font-size: 36px;
+    font-weight:700;
+    color: white;
+}
+
+header ul{
+    display: flex;
+    justify-content: flex-end;
+    gap:40px;
+    list-style: none;
+}
+
+header a{
+/*text-decoration:none;*/
+    color: white;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+/* Bannière */
+.banniere{
+    background-color: #eeeeee;
+}
+
+.banniere .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 200px;
+}
+
+.banniere h2{
+    font-size: 36px;
+    /* text-align: center; */
+    font-weight: 300;
+    letter-spacing: 6px;
+}
+
+/* Contenu principal */
+
+.titre-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 60px;
+
+    background-color: #eeeeee;
+
+    margin-bottom: 60px;
+    margin-top: 80px;
+
+    border:1px solid #d0d0d0;
+}
+
+.titre-section h2{
+    font-size: 18px;
+
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+.titre-section img{
+    margin-right: 20px;
+    cursor:pointer;
+}
+
+.conteneur-transport{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:60px;
+}
+
+.conteneur-transport h3{
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.conteneur-transport p{
+    text-align: center;
+}
+
+/* footer */
+
+footer{
+    background-color: #171717;
+}
+
+footer h4{
+    margin: 0;
+    
+    color:white;
+}
+
+footer .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+footer ul{
+    display: flex;
+    gap:20px;
+    list-style: none;
+}
+
+
+
+
+.facebook a{
+    background-image: url(../images/facebook.jpg);
+}
+.x a{
+    background-image: url(../images/twitter.jpg);
+}
+.linkedin a{
+    background-image: url(../images/linkedin.jpg);
+}
+.pinterest a{
+    background-image: url(../images/pinterest.jpg);
+}
+
+.facebook a:hover{
+    background-image: url(../images/facebook-hover.jpg);
+}
+.x a:hover{
+    background-image: url(../images/twitter-hover.jpg);
+}
+.linkedin a:hover{
+    background-image: url(../images/linkedin-hover.jpg);
+}
+.pinterest a:hover{
+    background-image: url(../images/pinterest-hover.jpg);
+}
+
+/* Aide stylistique */
+
+.conteneur-transport-invisible{
+    display: none;
+}
